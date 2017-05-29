@@ -1,0 +1,9 @@
+<h1><%= @post.id %>번 post를 수정할 화면</h1>
+<form action='/posts/update/<%= @post.id %>'>
+    <p>제 목</p>
+    <input type='text' name='input_title' value="<%= @post.title %>">
+    <p>내 용</p>
+    <input type='text' name='input_content'value="<%= @post.content %>">
+    <p>제 출</p>
+    <input type='submit'>
+</form>
